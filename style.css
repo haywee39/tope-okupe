@@ -1,0 +1,417 @@
+
+:root
+{
+    --bg-black-900:#f2f2fc;
+    --bg-black-100:#fdf9ff;
+    --bg-black-50:#e8dfec;
+    --text-black-900:#302e4d;
+    --text-black-700:#504e70;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+::before,::after{
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* font-family: 'poppins'; */
+    /* line-height: 1.5; */
+    /* font-size: 16px; */
+    /* font-family: 'Poppins' sans-serif; */
+}
+/* ************************************************ */
+/* SIDE NAV BEGINS HERE  */
+/* aside  */
+.aside{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 100%;
+    border-right: 1px solid grey;
+    background: black;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    padding: 30px;
+
+}
+/* logo styling */
+.aside .logo{
+    font-family: 'Splash', cursive;
+    position: absolute;
+    top: 70px;
+}
+
+.aside .logo a{
+    color: orange;
+    font-weight: 700;
+    padding: 15px 20px;
+    font-size: 30px;
+    letter-spacing: 5px;
+    position: relative;
+}
+
+.aside .logo a::before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-bottom: 5px solid orange;
+    border-left: 5px solid orange;
+    bottom: 0;
+    left: 0;
+}
+
+.aside .logo a::after{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-top: 5px solid orange;
+    border-right: 5px solid orange;
+    top: 0;
+    right: 0;
+}
+/* ******************************************** */
+/* menu list  */
+.aside .nav{
+    /* font-family: 'poppins'; */
+    margin-top: 120px;
+}
+
+.aside .nav li{
+    margin-bottom: 40px;
+    display: block;
+}
+
+.aside .nav li a{
+    display: block;
+    border-bottom: 1px solid var(--bg-black-50);
+    color: white;
+    padding: 5px 25px;
+}
+
+.aside .nav li a.active{
+    color: orange;
+}
+
+.aside .nav li a i{
+    margin-right: 20px;
+}
+/* ********************************************** */
+/* toggler icon */
+.aside .nav-toggler{
+    height: 40px;
+    width: 45px;
+    border: 1px solid orange;
+    cursor: pointer;
+    position: fixed;
+    left: 300px;
+    top: 20px;
+    border-radius: 5px;
+    background: purple;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.aside .nav-toggler span{
+    height: 2px;
+    width: 20px;
+    background-color: orange;
+    display: inline-block;
+    position: relative;
+}
+
+.aside .nav-toggler span::before{
+    content: '';
+    height: 2px;
+    width: 20px;
+    background: orange;
+    position: absolute;
+    top: -6px;
+    left: 0;
+}
+
+.aside .nav-toggler span::after{
+    content: '';
+    height: 2px;
+    width: 20px;
+    background: orange;
+    position: absolute;
+    top: 6px;
+    left: 0;
+}
+
+/* SIDE NAV ENDS HERE  */
+/* ************************************************************ */
+.main-content{
+    padding-left: 270px;
+}
+.padd-15{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* **********************************************************8 */
+/* section  */
+.section{
+    /* background: var(--bg-black-900); */
+    min-height: 100vh;
+    display: block;
+    /* position: fixed; */
+    /* left: 270px; */
+    padding: 0 30px;
+    /* top: 0; */
+    /* right: 0; */
+    opacity: 1;
+    /* z-index: 1; */
+}
+.hidden{
+    /* display: none !important; */
+}
+
+
+.section .container{
+    padding-top: 60px;
+    padding-bottom: 70px;
+    /* display: flex; */
+    /* justify-content: center; */
+}
+
+
+/* ***********
+****************************************** */
+/* home  */
+#background-video {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    height: 100vh;
+    padding-left: 270px;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1; /* Place behind other content */
+    object-fit: cover; /* Ensure video covers the entire area */
+  }
+#home{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    color: white;
+    /* background:black; */
+    /* background: rgb(13, 13, 14); */
+    /* background: rgb(13, 10, 10); */
+    
+}
+.container-home{
+    max-width: 1100px;
+    width: 100%;
+    /* margin: auto; */
+    /* background: green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.cont-row{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row !important;
+    /* flex-wrap: wrap; */
+    /* margin-left: -55px; */
+    /* margin-right: -55px; */
+    /* position: relative; */
+    /* background-color: orangered; */
+}
+
+.cont-row .home-info{
+    /* flex: 0 0 60%; */
+    max-width: 60%;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont-row .home-img{
+    flex: 0 0 40%;
+    max-width: 40%; 
+    /* background: red; */
+    text-align: center;
+    position: relative;
+}
+h3.hello{
+    font-size: 35px;
+    /* margin: 15px 0; */
+}
+h3.hello span{
+    font-family: 'Splash', cursive;
+    font-size: 40px;
+    letter-spacing: 4px;
+    word-spacing: 7px;
+    color: orange;
+}
+h3.my-profession{
+    font-size: 35px;
+    margin: 25px 0;
+}
+.row{
+    display: flex;
+    flex-direction: column;
+}
+.home-info p{
+    
+    margin-bottom: 20px;
+    color: white;
+    font-weight: lighter;
+}
+/* ********************************************* */
+.social-handle{
+    width: 200px;
+    height: 50px;
+    /* background: red; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/* .btn{
+    padding: 12px 35px;
+    color: white;
+    border-radius: 40px;
+    border: none;
+    background: orange;
+    display: inline-block;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+} */
+
+/* .btn:hover{
+    transform: scale(1.5);
+    border: 1px solid white;
+    margin-left: 20px;
+} */
+/* ************************************************ */
+
+.cont-row .home-img{
+    /* background: blue; */
+}
+
+.cont-row .home-img img{
+    /* margin: auto; */
+    border-radius: 5px;
+    height: 600px;
+    /* background: yellow; */
+}
+/* .home-img::after{
+    content: '';
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    border-bottom: 10px solid orange;
+    border-right: 10px solid orange;
+    right: 20px;
+    bottom: -40px;
+}
+
+.home-img::before{
+    content: '';
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    border-top: 10px solid orange;
+    border-left: 10px solid orange;
+    left: -20px;
+    top: -30px;
+} */
+
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
+/* About  */
+
+.section-title{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 60px;
+}
+.section-title h2{
+    font-size: 40px;
+    color: var(--text-black-900);
+    font-weight: 700;
+    position: relative;
+}
+.section-title h2::before{
+    content: '';
+    height: 4px;
+    width: 50px;
+    background-color: var(--skin-color);
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+.section-title h2::after{
+    content: '';
+    height: 4px;
+    width: 25px;
+    background-color: var(--skin-color);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 8px;
+}
+
+
+
+.about .about-content{
+    flex: 0 0 100%;
+    max-width: 100%;
+
+}
+
+.about .about-content .about-text{
+    flex: 0 0 100%;
+    max-width: 100%;
+    /* background-color: red; */
+}
+.about .about-content .about-text h3{
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: var(--text-black-900);
+}
+
+.about .about-content .about-text h3 span{
+    color: var(--skin-color);
+}
+.about .about-content .about-text p{
+    font-size: 16px;
+    line-height: 25px;
+    color: var(--text-black-900);
+}
+.about .about-content .personal-info{
+    flex: 0 0 100%;
+    max-width: 100%;
+    background-color: red;
+    margin-top: 0 40px;
+}
+.about .about-content .skills{
+    flex: 0 0 40%;
+    max-width: 40%;
+    background-color: green;
+    margin-top: 0 40px;
+
+}
