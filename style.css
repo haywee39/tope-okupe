@@ -16,6 +16,7 @@ body, html {
     padding: 0;
     height: 100%;
     overflow-x: hidden; /* Prevent horizontal scrollbar */
+    background: black;
 }
 /* ***************************************** */
 
@@ -34,39 +35,10 @@ body, html {
     left: 0;
     top: 0;
     padding: 30px;
-    border-right: 1px solid grey;
+    border-right: 1px solid white;
     z-index: 10;
 }
 /* ****************************************** */
-/* menu list  */
-.nav-bar ul {
-    margin-top: 120px;
-    list-style: none;
-    padding: 0;
-}
-
-.nav-bar ul li {
-    margin-bottom: 40px;
-    display: block;
-}
-
-.nav-bar ul li a{
-    display: block;
-    border-bottom: 1px solid white;
-    color: white;
-    padding: 5px;
-}
-
-.nav-bar ul li a.active{
-    color: orange;
-}
-
-.nav-bar ul li a i{
-    margin-right: 20px;
-}
-
-
- /* ************************************** */
 /* logo styling starts*/
 .nav-bar .logo{
     font-family: 'Splash', cursive;
@@ -106,6 +78,40 @@ body, html {
     right: 0;
 }
 /* logo styling ends  */
+/* ***************************************** */
+/* menu list  */
+.nav-bar ul {
+    margin-top: 120px;
+    list-style: none;
+    padding: 0;
+}
+
+.nav-bar ul li {
+    margin-bottom: 40px;
+    display: block;
+}
+
+.nav-bar ul li a{
+    display: block;
+    border-bottom: 1px solid white;
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+
+}
+.nav-bar ul li a:hover{
+    color: orange;
+    border-bottom: 1px solid orange;
+}
+
+.nav-bar ul li a.active{
+    color: orange;
+}
+
+.nav-bar ul li a i{
+    margin-right: 20px;
+}
+
 /* ******************************************** */
 
 
@@ -153,6 +159,7 @@ body, html {
     display: flex;
     justify-content: center;
     color: white;
+    overflow-x: hidden;
     
 }
 /* section  */
@@ -163,33 +170,26 @@ body, html {
     align-items: center;
     padding: 0 30px;
     opacity: 1;
+    /* background: aqua; */
 }
 
-
-
-/* ***********
-****************************************** */
-/* home  */
 #background-video {
     position: fixed; 
     top: 0;
     left: 0;
     height: 100vh;
-    /* padding-left: 270px; */
     min-width: 100%;
     min-height: 100%;
     z-index: -1; /* Place behind other content */
     object-fit: cover; /* Ensure video covers the entire area */
   }
 
-/* .container-home{
-    max-width: 1100px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   
-} */
+
+
+/* ***********
+****************************************** */
+/* home  */
+
 .cont-row{
     display: flex;
     justify-content: space-between;
@@ -202,7 +202,6 @@ body, html {
 }
 
 .cont-row .home-info{
-    /* flex: 0 0 60%; */
     max-width: 60%;
     /* background-color: aqua; */
     display: flex;
@@ -233,10 +232,7 @@ h3.my-profession{
     font-size: 35px;
     margin: 25px 0;
 }
-/* .row{
-    display: flex;
-    flex-direction: column;
-} */
+
 .home-info p{
     /* background-color: blue; */
     margin-bottom: 20px;
@@ -253,25 +249,33 @@ h3.my-profession{
     justify-content: space-evenly;
     align-items: center;
 }
-/* .btn{
-    padding: 12px 35px;
+
+.social-handle i{
     color: white;
-    border-radius: 40px;
-    border: none;
-    background: orange;
+}
+.social-handle i:hover{
+    color: orange;
+}
+.btn{
+    margin-top: 10px;
+    padding: 15px 35px;
+    color: white;
+    border-radius: 10px;
+    border: white 1px solid;
+    background: transparent;
     display: inline-block;
     white-space: nowrap;
     transition: all 0.3s ease;
-} */
+}
 
-/* .btn:hover{
-    transform: scale(1.5);
-    border: 1px solid white;
-    margin-left: 20px;
-} */
+.btn:hover{
+    transform: scale(1);
+    background: orange;
+}
 /* ************************************************ */
 
 .cont-row .home-img{
+    display: flex;
     /* background: blue; */
 }
 
@@ -281,27 +285,6 @@ h3.my-profession{
     height: 600px;
     /* background: yellow; */
 }
-/* .home-img::after{
-    content: '';
-    position: absolute;
-    height: 80px;
-    width: 80px;
-    border-bottom: 10px solid orange;
-    border-right: 10px solid orange;
-    right: 20px;
-    bottom: -40px;
-}
-
-.home-img::before{
-    content: '';
-    position: absolute;
-    height: 80px;
-    width: 80px;
-    border-top: 10px solid orange;
-    border-left: 10px solid orange;
-    left: -20px;
-    top: -30px;
-} */
 
 /* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
 
@@ -309,7 +292,247 @@ h3.my-profession{
 
 
 /*  */
-#about{
-    background: purple;
-    height: 150vh;
+
+#about {
+    background-color: black;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: auto;
+    
 }
+
+.about-tope{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    /* background: red; */
+}
+.me{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    padding: 20px;
+    width: 80%;
+    height: auto;
+    /* background: yellow; */
+}
+
+.about_heading {
+    margin-bottom: 20px;
+    color: orange;
+    /* letter-spacing: 2px; */
+    /* word-spacing: 3px; */
+    
+}
+
+.pic{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    margin-top: 55px;
+    background: orange ;
+}
+.tope-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+
+
+}
+.me > img .tope-img{
+    scale: 0.5; opacity: 0;
+    animation: fade-in linear;
+    animation-timeline: view();
+    animation-range:contain 100px;
+}
+@keyframes fade-in {
+    to {scale: 1; opacity: 1;}
+}
+
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
+
+
+
+
+/*  */
+
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: auto;
+    width: calc(100vw - 270px);
+    overflow-x: hidden;
+    
+}
+
+.contact-tope{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: auto;
+    /* background: red; */
+}
+
+/* *********************************************** */
+.contact-icons{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 60vh;
+    align-items: center;
+    justify-content: center;
+    /* background: green; */
+    }
+  
+  .contact-icons i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 75px;
+    border-radius: 5px;
+    background-color: orange;
+    color: white;
+  }
+
+  .contact-icons i:hover{
+    background-color: orange ;
+    color: black;
+  }
+  
+  .contact-icons h1{
+    color: orange;
+  }
+
+  .contact-icons p{
+    color: white;
+  }
+  
+  
+  .phone, .whatsapp, .email, .address{
+    margin: 8px;
+    display: flex;
+    width: 450px;
+    height: 170px;
+    align-items: center;
+    justify-content: center;
+    /* background-color: yellow; */
+  }    
+  
+  .sub-phone, .sub-whatsapp, .sub-email, .sub-address{
+    display: flex;
+    flex-direction: column;
+    width:450px;
+    height: 100px;
+    margin-left: 5px;
+    padding-top: 10px;
+    padding-left: 10px;
+    /* background-color: red; */
+  }
+  
+  .contact-icons a{
+  text-decoration: none;
+  color: white;
+  }
+  
+  
+  .contact-icons p:hover{
+  color: orange ;
+  }
+  
+  /* ****************************************** */
+  /* ****************************************** */
+.yes-msg{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: calc(100vw - 270px);
+    height: 80vh;
+    /* background-color: blue; */
+  }
+  .contact-form{
+    padding-left: 65px;
+    /* padding: 40px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100vw - 270px);
+    height: auto;
+    /* background-color: #d58936; */
+  }
+  
+  .cont-form, .maps{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 38vw;
+    height: 70vh;
+    border-radius: 10px;
+    /* background-color: rgb(70, 14, 166); */
+    color: white;
+  
+  }
+  
+  form h1{
+    margin-bottom: 10px;
+    color: orange;
+  }
+  
+  form input{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 500px;
+    height: 50px;
+    border-radius: 6px;
+    border: none;
+    font-size: 16px;
+    padding-left: 15px;
+    /* background-color: #69140e; */
+    color: black;
+    
+  }
+  
+  textarea{
+    width: 500px;
+    height: 30vh;
+    border-radius: 6px;
+    font-size: 15px;
+    padding-top: 10px;
+    padding-left: 15px;
+    background-color: white;
+    color: black;
+  }
+
+  .submit{
+    margin-top: 10px;
+    padding: 15px 35px;
+    color: white;
+    border-radius: 10px;
+    border: white 1px solid;
+    background: transparent;
+    display: inline-block;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+}
+
+.submit:hover{
+    transform: scale(1);
+    background: orange;
+}
+  
+  /* ***************** */
+ 
