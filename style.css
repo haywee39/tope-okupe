@@ -357,6 +357,97 @@ h3.my-profession{
 
 /* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
 
+/* ************************************************** */
+
+/*  */
+
+#projects {
+    background-color: black;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: auto;
+    
+}
+
+.tope-portfolio{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    /* background: red; */
+}
+.our-work{
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(100vw - 300px);
+  height: auto;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 20px;
+  /* background-color: blue; */
+}
+  
+  .parent {
+    cursor: pointer;
+  }
+  
+  
+  
+  .parent{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+    height: 320px;
+  }
+  .parent img{
+    width: 450px;
+    height: 320px;
+   
+  }
+  
+  .child{
+    position: absolute;
+    visibility: hidden;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+    background-color: orange;
+    right: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    transition: width 0.4s ease, height 0.4s ease;
+    
+    
+  }
+  .parent:hover .child{
+    visibility: visible;
+    width: 450px;
+    height: 320px;
+    opacity: 0.7;
+    
+  }
+  
+  .child p{
+    margin-top: 4vh;
+    width: 270px;
+    font-weight: normal;
+  }
+  /* ************************************************************** */
+
 
 
 
