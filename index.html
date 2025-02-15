@@ -8,6 +8,7 @@
 
 
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./media.css">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> -->
 
     <title>Temitope Okupe Portfolio</title>
@@ -25,9 +26,11 @@
             <a href="#">Toppsie</a>
         </div>
 
-        <!-- toggler icon -->
+        <!-- toggler icon  -->
         <div class="nav-toggler">
-            <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
 
         <!-- menu list  -->
@@ -41,6 +44,7 @@
 
     <!-- NAVBAR ENDS HERE  -->
     <div class="content-wrapper">
+      
 
 
         <div id="home" class="content active">
@@ -59,7 +63,7 @@
                             <h3 class="my-profession"> HR Professional</h3>
                             <p>
                                 A detail-oriented human resources practitioner with 10+ years in 
-                                private sector and non-profit organizations. Guiness Made of Black Hero, <br>
+                                private sector and non-profit organizations. Guinness Made of Black Hero, <br>
                                 An adaptable and transformational leader, analytical thinker with in-depth understanding of HR practices, 
                                 WSIB, and staff development.
                             
@@ -385,6 +389,23 @@
             target.scrollTop = 0;
         });
     });
+
+    // *********************************************************************
+    const navTogglerBtn = document.querySelector(".nav-toggler")
+          navBar = document.querySelector(".nav-bar")
+          navTogglerBtn.addEventListener("click", () =>
+          {
+            navbarSectionTogglerBtn();
+          })
+          function navbarSectionTogglerBtn()
+          {
+            navBar.classList.toggle("open");
+            navTogglerBtn.classList.toggle("open");
+            for(let i=0; i<totlSection; i++)
+          {
+            allSection[i].classList.toggle("open");
+          }
+          }
 </script>
 
 </body>

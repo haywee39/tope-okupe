@@ -1,0 +1,28 @@
+@media (max-width: 768px) { /*Adjust breakpoint as needed */
+    .nav-bar {
+       left: -270px;
+    }
+
+    .nav-toggler {
+        display: flex;
+        left: 30px;
+
+    }
+    .nav-bar.open{
+        left: 0;
+    }
+    .nav-bar .nav-toggler.open{
+        left: 300px;
+    }
+    .content{
+        left: 0;
+    }
+    .content.open{
+        left: 270px;
+    }
+
+}
+
+    
+
+  

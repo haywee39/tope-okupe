@@ -37,6 +37,7 @@ body, html {
     padding: 30px;
     border-right: 1px solid white;
     z-index: 10;
+    transition: all 0.3s ease;
 }
 /* ****************************************** */
 /* logo styling starts*/
@@ -112,6 +113,54 @@ body, html {
     margin-right: 20px;
 }
 
+.nav-toggler{
+    position: fixed;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 45px;
+    border: 2px solid white;
+    cursor: pointer;
+    left: 300px;
+    top: 20px;
+    background: orange;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+
+}
+.nav-toggler span{
+    position: relative;
+    display: inline-block;
+    height: 2px;
+    width: 10px;
+    background-color: white;
+
+}
+
+.nav-toggler span::before{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 10px;
+    color: white;
+    top: -6px;
+    left: 0;
+    background: white;
+
+}
+.nav-toggler span::after{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 10px;
+    color: white;
+    top: 6px;
+    left: 0;
+    background: white;
+
+}
+
 /* ******************************************** */
 
 
@@ -120,8 +169,7 @@ body, html {
     height: 100%;
 }
 
-/* ********************************************* */
-
+/* /* ********* */
 .content-wrapper {
     flex: 1; /* Takes up remaining space */
     position: relative; /* For positioning the sliding content */
