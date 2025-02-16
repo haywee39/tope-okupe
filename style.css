@@ -18,6 +18,10 @@ body, html {
     overflow-x: hidden; /* Prevent horizontal scrollbar */
     background: black;
 }
+
+h1 span{
+    color: white;
+  }
 /* ***************************************** */
 
 
@@ -25,26 +29,26 @@ body, html {
 /* **************************************** */
 /* main navbar container  */
 .nav-bar {
+    position: fixed; /* Fixed vertical navbar */
+    left: 0;
+    top: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 270px;
     height: 100%;
-    background-color: #000; /* Example background color */
-    position: fixed; /* Fixed vertical navbar */
-    left: 0;
-    top: 0;
-    padding: 30px;
+    background-color: #000; 
     border-right: 1px solid white;
     z-index: 10;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
+    /* background-color: yellow; */
 }
 /* ****************************************** */
 /* logo styling starts*/
 .nav-bar .logo{
     font-family: 'Splash', cursive;
     position: absolute;
-    top: 70px;
+    top: 100px;
 }
 
 .nav-bar .logo a{
@@ -88,7 +92,7 @@ body, html {
 }
 
 .nav-bar ul li {
-    margin-bottom: 40px;
+    margin-top: 40px;
     display: block;
 }
 
@@ -98,8 +102,8 @@ body, html {
     color: white;
     padding: 5px;
     cursor: pointer;
-
 }
+
 .nav-bar ul li a:hover{
     color: orange;
     border-bottom: 1px solid orange;
@@ -115,7 +119,7 @@ body, html {
 
 .nav-toggler{
     position: fixed;
-    display: none;
+    display: flex;
     align-items: center;
     justify-content: center;
     height: 40px;
@@ -135,7 +139,6 @@ body, html {
     height: 2px;
     width: 10px;
     background-color: white;
-
 }
 
 .nav-toggler span::before{
@@ -163,13 +166,13 @@ body, html {
 
 /* ******************************************** */
 
-
 .container {
     display: flex;
     height: 100%;
+    background-color: purple;
+
 }
 
-/* /* ********* */
 .content-wrapper {
     flex: 1; /* Takes up remaining space */
     position: relative; /* For positioning the sliding content */
@@ -183,54 +186,54 @@ body, html {
     position: absolute;
     top: 0;
     left: 100%; /* All content starts at thesame position */
-    width: calc(100vw - 270px); /* Full width minus navbar width */
+    width: calc(100vw - 270px);
     height: auto; /*Allow content to expand vertically*/
     min-height: 100%; /*Ensure content covers full viewport height if smaller*/
-    background-color: #fff; /* Example background color */
     padding: 20px;
     box-sizing: border-box; 
     transition: transform 0.7s ease; 
-    /* transform: 0.4s ease; Smooth sliding transition */
     overflow-y: auto; 
+    /* background-color: chartreuse; */
 }
 
 .content.active {
     transform: translateX(-100%); /* Slide in from the right */
 }
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
 /* Style for the home content, which is always visible initially */
 #home {
-    left: 0; /* Initially visible */
-    transform: translateX(0);
-    background: black;
-    height: 100vh;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    color: white;
-    overflow-x: hidden;
-    
+  left: 0; /* Initially visible */
+  transform: translateX(0);
+  background: black;
+  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  color: white;
+  overflow-x: hidden;
+  
 }
 /* section  */
 .section{
-    min-height: 100vh;
-    display: block;
-    justify-content: center;
-    align-items: center;
-    padding: 0 30px;
-    opacity: 1;
-    /* background: aqua; */
+  min-height: 100vh;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30px;
+  opacity: 1;
+  /* background: aqua; */
 }
 
 #background-video {
-    position: fixed; 
-    top: 0;
-    left: 0;
-    height: 100vh;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -1; /* Place behind other content */
-    object-fit: cover; /* Ensure video covers the entire area */
-  }
+  position: fixed; 
+  top: 0;
+  left: 0;
+  height: 100vh;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1; /* Place behind other content */
+  object-fit: cover; /* Ensure video covers the entire area */
+}
 
 
 
@@ -238,100 +241,92 @@ body, html {
 ****************************************** */
 /* home  */
 
-.cont-row{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row !important;
-    /* flex-wrap: wrap; */
-    /* margin-left: -55px; */
-    /* margin-right: -55px; */
-    /* position: relative; */
-    /* background-color: orangered; */
+.home-content{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row !important;
 }
 
-.cont-row .home-info{
-    max-width: 60%;
-    /* background-color: aqua; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.home-info{
+  max-width: 60%;
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.cont-row .home-img{
-    flex: 0 0 40%;
-    max-width: 40%; 
-    /* background: red; */
-    text-align: center;
-    position: relative;
+.hello, .my-profession{
+  font-size: 35px;
 }
-h3.hello{
-    font-size: 35px;
-    /* margin: 15px 0; */
-}
-h3.hello span{
-    font-family: 'Splash', cursive;
-    font-size: 70px;
-    letter-spacing: 4px;
-    word-spacing: 7px;
-    color: orange;
-}
-h3.my-profession{
-    font-size: 35px;
-    margin: 25px 0;
+
+h1{
+  font-family: 'Splash', cursive;
+  font-size: 70px;
+  letter-spacing: 4px;
+  word-spacing: 7px;
+  color: orange;
 }
 
 .home-info p{
-    /* background-color: blue; */
-    margin-bottom: 20px;
-    color: white;
-    font-weight: lighter;
-    text-align: center;
+  /* background-color: blue; */
+  margin: 20px;
+  color: white;
+  font-weight: lighter;
+  text-align: center;
 }
 /* ********************************************* */
 .social-handle{
-    width: 200px;
-    height: 50px;
-    /* background: red; */
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+  margin: 20px;
+  width: 200px;
+  height: 50px;
+  /* background: red; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .social-handle i{
-    color: white;
+  color: white;
 }
+
 .social-handle i:hover{
-    color: orange;
+  color: orange;
 }
+
 .btn{
-    margin-top: 10px;
-    padding: 15px 35px;
-    color: white;
-    border-radius: 10px;
-    border: white 1px solid;
-    background: transparent;
-    display: inline-block;
-    white-space: nowrap;
-    transition: all 0.3s ease;
+  margin-top: 10px;
+  padding: 15px 35px;
+  color: white;
+  border-radius: 10px;
+  border: white 1px solid;
+  background: transparent;
+  display: inline-block;
+  white-space: nowrap;
+  transition: all 0.3s ease;
 }
 
 .btn:hover{
-    transform: scale(1);
-    background: orange;
+  background: orange;
 }
 /* ************************************************ */
-
-.cont-row .home-img{
-    display: flex;
-    /* background: blue; */
+.home-img{
+  flex: 0 0 40%;
+  max-width: 40%; 
+  /* background: red; */
+  text-align: center;
+  position: relative;
 }
 
-.cont-row .home-img img{
-    /* margin: auto; */
-    border-radius: 5px;
-    height: 600px;
-    /* background: yellow; */
+/* .home-img{
+  display: flex;
+  background: blue;
+} */
+
+.home-img img{
+  border-radius: 5px;
+  height: 600px;
+  background: transparent;
 }
 
 /* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
@@ -348,17 +343,9 @@ h3.my-profession{
     align-items: center;
     display: flex;
     height: auto;
-    
+    min-height: 100%;    
 }
 
-.about-tope{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    /* background: red; */
-}
 .me{
     display: flex;
     flex-direction: column;
@@ -373,10 +360,7 @@ h3.my-profession{
 
 .about_heading {
     margin-bottom: 20px;
-    color: orange;
-    /* letter-spacing: 2px; */
-    /* word-spacing: 3px; */
-    
+    color: orange; 
 }
 
 .pic{
@@ -390,17 +374,6 @@ h3.my-profession{
     width: 100%;
     height: 100%;
     border-radius: 100px;
-
-
-}
-.me > img .tope-img{
-    scale: 0.5; opacity: 0;
-    animation: fade-in linear;
-    animation-timeline: view();
-    animation-range:contain 100px;
-}
-@keyframes fade-in {
-    to {scale: 1; opacity: 1;}
 }
 
 /* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
@@ -410,26 +383,18 @@ h3.my-profession{
 /*  */
 
 #projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    min-height: 100%;
     background-color: black;
     color: white;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    height: auto;
-    
+        
 }
 
-.tope-portfolio{
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    /* background: red; */
-}
 .our-work{
+    margin-top: 10px;
   display: flex;
   flex-wrap: wrap;
   width: calc(100vw - 300px);
@@ -502,27 +467,15 @@ h3.my-profession{
 /*  */
 
 #contact {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: black;
-    height: auto;
-    width: calc(100vw - 270px);
-    overflow-x: hidden;
-    
-}
-
-.contact-tope{
-    display: flex;
-    flex-direction: column;
+    color: white;
     justify-content: center;
     align-items: center;
-    width: 95%;
+    display: flex;
     height: auto;
-    /* background: red; */
+    min-height: 100%;    
 }
 
-/* *********************************************** */
 .contact-icons{
     display: flex;
     flex-direction: column;
@@ -604,7 +557,6 @@ h3.my-profession{
   }
   .contact-form{
     padding-left: 65px;
-    /* padding: 40px; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -620,7 +572,6 @@ h3.my-profession{
     width: 38vw;
     height: 70vh;
     border-radius: 10px;
-    /* background-color: rgb(70, 14, 166); */
     color: white;
   
   }
@@ -640,7 +591,6 @@ h3.my-profession{
     border: none;
     font-size: 16px;
     padding-left: 15px;
-    /* background-color: #69140e; */
     color: black;
     
   }
