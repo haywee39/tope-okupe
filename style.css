@@ -19,7 +19,7 @@ body, html {
     background: black;
 }
 
-h1 span{
+.about_heading span{
     color: white;
   }
 /* ***************************************** */
@@ -260,7 +260,7 @@ h1 span{
   font-size: 35px;
 }
 
-h1{
+h1.name{
   font-family: 'Splash', cursive;
   font-size: 70px;
   letter-spacing: 4px;
@@ -318,11 +318,6 @@ h1{
   position: relative;
 }
 
-/* .home-img{
-  display: flex;
-  background: blue;
-} */
-
 .home-img img{
   border-radius: 5px;
   height: 600px;
@@ -330,8 +325,6 @@ h1{
 }
 
 /* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
-
-
 
 
 /*  */
@@ -378,8 +371,6 @@ h1{
 
 /* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
 
-/* ************************************************** */
-
 /*  */
 
 #projects {
@@ -420,10 +411,10 @@ h1{
     width: 450px;
     height: 320px;
   }
+
   .parent img{
     width: 450px;
-    height: 320px;
-   
+    height: 320px; 
   }
   
   .child{
@@ -442,16 +433,14 @@ h1{
     top: 0;
     width: 0;
     height: 0;
-    transition: width 0.4s ease, height 0.4s ease;
-    
-    
+    transition: width 0.4s ease, height 0.4s ease;  
   }
+
   .parent:hover .child{
     visibility: visible;
     width: 450px;
     height: 320px;
-    opacity: 0.7;
-    
+    opacity: 0.7; 
   }
   
   .child p{
@@ -460,9 +449,6 @@ h1{
     font-weight: normal;
   }
   /* ************************************************************** */
-
-
-
 
 /*  */
 
@@ -485,7 +471,7 @@ h1{
     align-items: center;
     justify-content: center;
     /* background: green; */
-    }
+  }
   
   .contact-icons i{
     display: flex;
@@ -562,7 +548,6 @@ h1{
     justify-content: center;
     width: calc(100vw - 270px);
     height: auto;
-    /* background-color: #d58936; */
   }
   
   .cont-form, .maps{
