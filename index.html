@@ -354,6 +354,12 @@
 <script>
     const navLinks = document.querySelectorAll('.nav-bar a');
     const contents = document.querySelectorAll('.content');
+    // *******************
+    const navBar = document.querySelector('.nav-bar');
+    const navToggler = document.querySelector('.nav-toggler');
+    const contentWrapper = document.querySelector('.content-wrapper');
+    // *************************
+
 
     navLinks.forEach(link => {
         link.addEventListener('click', (event) => {
@@ -371,6 +377,11 @@
             target.scrollTop = 0;
         });
     });
+    // ****************************
+    navToggler.addEventListener('click', () => {
+    navBar.classList.toggle('active'); // Toggle navbar visibility
+    contentWrapper.classList.toggle('nav-open'); // Toggle content margin
+});
 
     // *********************************************************************
     // const navTogglerBtn = document.querySelector(".nav-toggler")
@@ -388,6 +399,10 @@
     //         allSection[i].classList.toggle("open");
     //       }
     //       }
+
+
+
+
 </script>
 
 </body>

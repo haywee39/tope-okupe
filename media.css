@@ -1,28 +1,60 @@
-/* @media (max-width: 768px){
+/* ... (Your existing CSS) ... */
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
     .nav-bar {
-       left: -270px;
+        width: 100%;
+        height: 60px;
+        padding: 10px;
+        background-color: #000;
+        flex-direction: row; /* Horizontal layout */
+        align-items: center;
+        justify-content: space-between; /* Distribute logo and toggler */
+        transform: translateX(-100%); /* Initially hidden off-screen */
+        transition: transform 0.5s ease; /* Smooth slide transition */
+        z-index: 100; /* Ensure it's above other content */
+    }
+
+    .nav-bar.active {
+        transform: translateX(0); /* Slide in when active */
+    }
+
+    .logo {
+        margin: 0; /* Remove default margins */
     }
 
     .nav-toggler {
+        display: block;
+        cursor: pointer;
+        color: white;
+        font-size: 24px;
+        margin-right: 10px;
+        z-index: 101; /* Ensure it's above the navbar */
+    }
+
+    .nav-bar ul {
         display: flex;
-        left: 30px;
-
-    }
-    .nav-bar.open{
-        left: 0;
-    }
-    .nav-bar .nav-toggler.open{
-        left: 300px;
-    }
-    .content{
-        left: 0;
-    }
-    .content.open{
-        left: 270px;
+        flex-direction: column;
+        margin-top: 60px; /* Adjust as needed */
+        width: 100%;
+        background-color: #000;
+        padding: 10px;
     }
 
-} */
+    .nav-bar ul li {
+        margin-bottom: 20px;
+    }
 
-    
+    .content-wrapper {
+        margin-left: 0; /* Remove left margin */
+        transition: margin-left 0.5s ease; /* Smooth margin transition */
+    }
 
-  
+    .content-wrapper.nav-open {
+        margin-left: 100%; /* Make space for the sliding navbar */
+    }
+
+    .content {
+        width: 100vw;
+    }
+}

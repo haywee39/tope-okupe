@@ -188,7 +188,7 @@ body, html {
     left: 100%; /* All content starts at thesame position */
     width: calc(100vw - 270px);
     height: auto; /*Allow content to expand vertically*/
-    min-height: 100%; /*Ensure content covers full viewport height if smaller*/
+    /* min-height: 100%; Ensure content covers full viewport height if smaller */
     padding: 20px;
     box-sizing: border-box; 
     transition: transform 0.7s ease; 
