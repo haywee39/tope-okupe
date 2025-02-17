@@ -3,8 +3,9 @@
 /* Media query for smaller screens */
 @media (max-width: 768px) {
     .nav-bar {
-        width: 100%;
-        height: 60px;
+        display: flex; 
+        width: 300px;
+        height: 100vh;
         padding: 10px;
         background-color: #000;
         flex-direction: row; /* Horizontal layout */
@@ -13,7 +14,7 @@
         transform: translateX(-100%); /* Initially hidden off-screen */
         transition: transform 0.5s ease; /* Smooth slide transition */
         z-index: 100; /* Ensure it's above other content */
-        padding: 10pxtgler;
+        /* padding: 10px; */
     }
 
     .nav-bar.active {
@@ -25,19 +26,22 @@
     }
 
     .nav-toggler {
-        display: block;
+        /* position: absolute; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
         cursor: pointer;
         color: white;
         font-size: 24px;
-        margin-right: 10px;
-        z-index: 101; /* Ensure it's above the navbar */
+        margin-left: 10px;
+        z-index: 1000; /* Ensure it's above the navbar */
     }
 
     .nav-bar ul {
         display: flex;
         flex-direction: column;
         margin-top: 60px; /* Adjust as needed */
-        width: 100%;
+        width: 80%;
         background-color: #000;
         padding: 10px;
     }
@@ -49,13 +53,75 @@
     .content-wrapper {
         margin-left: 0; /* Remove left margin */
         transition: margin-left 0.5s ease; /* Smooth margin transition */
+        width: 100vw;/**/
+
     }
 
     .content-wrapper.nav-open {
-        margin-left: 100%; /* Make space for the sliding navbar */
+        margin-left: 100%; /*Make space for the sliding navbar*/
+        /* margin-left: 0;  */
     }
 
     .content {
         width: 100vw;
+        height: auto; /**/
+        
     }
+
+   #home{
+    /* flex-direction: column; */
+    /* align-items: center; */
+    height: auto;
+    /* min-height: 100vh; */
+    width: 100vw;/**/
+    padding: 20px;
+    /* background-color: red; */
+   }
+   .home-content{
+    /* background: grey; */
+    /* height: 100; */
+    width: 100vw;
+   }
+
+   .home-info{
+    /* max-width: 60%;  */
+    background-color: transparent;
+   }
+
+   .hello, .my-profession{
+    font-size: 24px;
+   }
+
+   h1.name{
+    font-size: 28px;
+    width: 100%;
+    /* background-color: red; */
+    text-align: center;
+    /* text-justify: auto; */
+    /* word-wrap: break-word; */
+   }
+
+   .home-info p{
+    margin: 10px;
+    font-size: 16px;
+   }
+
+   .social-handle{
+    margin: 20px auto;
+   }
+
+   .home-img{
+    display: none; /**/
+   }
+
+  
+
+   #background-video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   }
+
+
+
 }
