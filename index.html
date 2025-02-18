@@ -6,403 +6,335 @@
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Crushed&family=Fira+Sans+Extra+Condensed:wght@100&family=Inter:wght@100;800&family=League+Gothic&family=Splash&family=Ubuntu+Condensed&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./media.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> -->
 
     <title>Temitope Okupe Portfolio</title>
-    
+
 </head>
 <body>
-
-<div class="container">
-
-    <!-- NAVBAR BEGINS HERE  -->
-    <div class="nav-bar">
-
-        <!-- logo  -->
+    <!-- ************************************************************************************************************** -->
+    <!-- Sidebar -->
+    <div class="sidenav" id="sidenav">
+        
         <div class="logo">
             <a href="#">Toppsie</a>
         </div>
        
-        <!-- toggler icon  -->
-        <div class="nav-toggler">
-          <span></span>
-        </div>
 
-        <!-- menu list  -->
-        <ul>
-            <li><a data-target="home"><i class="fa fa-home"></i> Home</a></li>
-            <li><a data-target="about"><i class="fa fa-user"></i> About</a></li>
-            <li><a data-target="projects"><i class="fa fa-briefcase"></i> Portfolio</a></li>
-            <li><a data-target="contact"><i class="fa fa-comments"></i> Contact</a></li>
-        </ul>
+        <a href="javascript:void(0)" onclick="showContent('home')"><i class="fa fa-home"></i> Home</a>
+        <a href="javascript:void(0)" onclick="showContent('about')"><i class="fa fa-user"></i> About</a>
+        <a href="javascript:void(0)" onclick="showContent('projects')"><i class="fa fa-briefcase"></i> Portfolio</a>
+        <a href="javascript:void(0)" onclick="showContent('contact')"><i class="fa fa-comments"></i> Contact</a>
     </div>
+    <!-- ************************************************************************************************************** -->
 
-    <!-- NAVBAR ENDS HERE  -->
-     <!-- *********************************************************************************** -->
-    <div class="content-wrapper">
+    <!-- Main content -->
+    <div class="main" id="main">
+      <video id="background-video" autoplay muted loop>
+        <source src="./3129977-uhd_3840_2160_30fps.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+        
+                        <button class="toggle-btn" onclick="toggleNav()">☰</button>    
+                        <div class="content" id="home">
 
-
-      <div id="home" class="content active">
+                            <!-- <video id="background-video" autoplay muted loop>
+                                <source src="./3129977-uhd_3840_2160_30fps.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video> -->
            
-        <section class="home section hidden">
-            <video id="background-video" autoplay muted loop>
-                <source src="./3129977-uhd_3840_2160_30fps.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-               
-                <div class="home-content">
-                    <div class="home-info">
-                        <h3 class="hello">I am </h3>
-                        <h1 class="name">Temitope Okupe</h1>
-                        <h3 class="my-profession"> HR Professional</h3>
-                        <p>
-                            A detail-oriented human resources practitioner with 10+ years in 
-                            private sector and non-profit organizations. <br>
-                             Guinness Made of Black Hero, <br>
-                            An adaptable and transformational leader, analytical thinker with in-depth understanding of HR practices, 
-                            WSIB, and staff development.
-                        
-                        </p>
-
-                       
-
-                        <div class="social-handle">
-                            <i class="fa-brands fa-linkedin fa-2x"></i>
-                            <i class="fa-brands fa-whatsapp fa-2x"></i>
-                            <i class="fa-brands fa-square-facebook fa-2x"></i>      
-                        </div>
-
-                        <a href="about" class="btn hire-me">More About Me</a>
-                                                   
-                    </div>
-
-                    <!-- image on the right div  -->
-                    <div class="home-img">
-                         <img src="./pexels-elsimage-2216607-removebg-preview.png" alt="">
-                    </div>
-
-                </div>
-
-        </section>
-        <!-- Home Section End -->
-
-      </div>
-    <!-- &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& -->
-
- 
-        <section id="about" class="content">
-          <div class="me">
-            <h1 class="about_heading">About <span>Me</span></h1>
-
-
-            <p>
-                Ayo Oke is a computer scientist with substantial expertise in computing and mathematics.<br>
-                A professional full-stack engineer with experience in both frontend and backend development,
-                as well as programming languages such as Python, JavaScript, Django, and React.<br>
-                My diverse skills extend to software project management, where my primary strengths are
-                negotiating ambiguity and proactively tackling obstacles. <br><br>
-                I excel in painstakingly analyzing project scopes, finding bottlenecks, and
-                effectively allocating resources, with a strong emphasis on risk management and resource optimization.
-                This skill guarantees that projects are completed perfectly well on schedule and within budget.<br>
-                I have an amazing track record of successfully completing several projects.
-                My profile includes a creative element in addition to my technical and project management talents.
-                <br><br>
-                I am a well-rounded professional with a solid foundation in computer science education, mathematics,
-                coding prowess, efficient project management abilities, creative endeavors in paint production,
-                and a passion for music production and instruction. <br><br>
-                Also, my hands-on approach to artistic endeavors is demonstrated by my experience in decorative paint
-                production.
-                A music instructor with an understanding of Jazz music with flexibility on musical instruments
-                such as the piano, bass guitar, lead guitar, and drums.<br>
-                My simple yet powerful profile demonstrates my passion and achievements in a variety of fields.
-                <br>
-                I am a well-rounded professional with a solid foundation in computer science education, mathematics,
-                coding prowess, efficient project management abilities, creative endeavors in paint production,
-                and a passion for music production and instruction. <br><br>
-                Also, my hands-on approach to artistic endeavors is demonstrated by my experience in decorative paint
-                production.
-                A music instructor with an understanding of Jazz music with flexibility on musical instruments
-                such as the piano, bass guitar, lead guitar, and drums.<br>
-                My simple yet powerful profile demonstrates my passion and achievements in a variety of fields.
-                
-            </p>
-
-            <div class="pic">
-                <img class="tope-img" src="./homeimgs/FB_IMG_1739703691354.jpg" alt="my picture">
-            </div>
-          </div>
-        </section>
-
-       
-
-        <!-- **************************************************************************************** -->
-
-        <section id="projects" class="content">
-          <div class="me">
-
-                <h1 class="about_heading">Projects <span>Done</span></h1>
-                
-                <div class="our-work">                    
-                    <!-- 1 -->
-                    <div class="parent">
-                      <img src="./projectimgs/car.jpg" alt="">
-                      <div class="child">
-                        <h3>Lorem Ipsum Porfoklio</h3>
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                          Iure enim officiis quaerat eligendi officia dolore ipsam impedit. 
-                          Consequatur, repellendus, atque accusamus porro nobis, tenetur autem ullam hic dolorum placeat saepe!
-                        </p>
-                      </div>
-                    </div>
-                    <!-- 2 -->
-                    <div class="parent">
-                      <img src="./projectimgs/cupjottter.jpg" alt="">
-                      <div class="child">
-                        <h3>Lorem Ipsum Porfoklio</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Iure enim officiis quaerat eligendi officia dolore ipsam impedit. 
-                            Consequatur, repellendus, atque accusamus porro nobis, tenetur autem ullam hic dolorum placeat saepe!
-                        </p> 
-                      </div>
-                    </div>
-                    <!-- 3 -->
-                    <div class="parent">
-                      <img src="./projectimgs/rollamala.jpeg" alt="">
-                      <div class="child">
-                        <h3>Lorem Ipsum Porfoklio</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Iure enim officiis quaerat eligendi officia dolore ipsam impedit. 
-                            Consequatur, repellendus, atque accusamus porro nobis, tenetur autem ullam hic dolorum placeat saepe!
-                        </p>
-                      </div>
-                    </div>
-                    <!-- 4 -->
-                    <div class="parent">
-                      <img src="./projectimgs/tablepentape.jpg" alt="">
-                      <div class="child">
-                        <h3>Lorem Ipsum Porfoklio</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Iure enim officiis quaerat eligendi officia dolore ipsam impedit. 
-                            Consequatur, repellendus, atque accusamus porro nobis, tenetur autem ullam hic dolorum placeat saepe!
-                        </p>
-                      </div>
-                    </div>
-                    <!-- 5 -->
-                    <div class="parent">
-                      <img src="./projectimgs/cupjottter.jpg" alt="">
-                      <div class="child">
-                        <h3>Lorem Ipsum Porfoklio</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Iure enim officiis quaerat eligendi officia dolore ipsam impedit. 
-                            Consequatur, repellendus, atque accusamus porro nobis, tenetur autem ullam hic dolorum placeat saepe!
-                        </p>
-                      </div>
-                    </div>
-                    <!-- 6 -->
-                    <div class="parent">
-                      <img src="./projectimgs/car.jpg" alt="">
-                      <div class="child">
-                        <h3>Lorem Ipsum Porfoklio</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Iure enim officiis quaerat eligendi officia dolore ipsam impedit. 
-                            Consequatur, repellendus, atque accusamus porro nobis, tenetur autem ullam hic dolorum placeat saepe!
-                        </p>
-                      </div>
-                    </div>
-                    <!-- 7 -->
-                    <div class="parent">
-                      <img src="./projectimgs/tablepentape.jpg" alt="">
-                      <div class="child">
-                        <h3>Lorem Ipsum Porfoklio</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Iure enim officiis quaerat eligendi officia dolore ipsam impedit. 
-                            Consequatur, repellendus, atque accusamus porro nobis, tenetur autem ullam hic dolorum placeat saepe!
-                        </p>
-                      </div>
-                    </div>
-                    <!-- 8 -->
-                    <div class="parent">
-                      <img src="./projectimgs/tablepentape.jpg" alt="">
-                      <div class="child">
-                        <h3>Lorem Ipsum Porfoklio</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Iure enim officiis quaerat eligendi officia dolore ipsam impedit. 
-                            Consequatur, repellendus, atque accusamus porro nobis, tenetur autem ullam hic dolorum placeat saepe!
-                        </p>
-                      </div>
-                    </div>
-
-                </div>
-          </div>
-        </section>
-       
-        <!-- ******************************************************************************************** -->
-        <section id="contact" class="content">
-          <div class="me">
-
-            <h1 class="about_heading">Contact <span>Me</span></h1>
-
-                <!-- **************************************************************************** -->
-                    <div class="contact-icons">
-
-                        <!-- Phone  -->
-                        <div class="phone">
-                        <i class="fa-solid fa-phone fa-2x"> </i>
-                        <div class="sub-phone">
-                            <h1>Phone</h1>
-                            <a href="tel:+234">
-                            <p>+234-123-5684-235</p>
-                            </a>
-                            
-                            <a href="tel:+2347030796069">
-                            <p>+234-123-5684-235</p>
-                            </a>
-                        </div>          
-                        </div>
-
-
-                        <!-- Email  -->
-                        <div class="email">
-                        <a href="mailto:ppassynergy@gmail.com" target="_blank"><i class="fa-solid fa-envelope fa-2x"></i></a>
-                        <div class="sub-email">
-                            <a href="mailto:ppassynergy@gmail.com" target="_blank">
-                            <h1>Email</h1>
-                            <p>toppsie@gmail.com</p>
-                            </a>
-                        </div> 
-                                
-                        </div>
-
-                        <!-- Whatsapp  -->
-                        <div class="whatsapp">
-                        <a href="https://wa.me/+234" target="_blank"><i class="fa-brands fa-whatsapp fa-2x"></i></a>
-                        <div class="sub-whatsapp">
-                            <a href="https://wa.me/+234" target="_blank">
-                            <h1>Whatsapp</h1>
-                            <p>+234-123-5684-235</p>
-                            </a>
-                        </div>          
-                        </div>
-
-                        
-
-                        <!-- Address  -->
-                        <div class="address">
-                        <a href="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d63408.35866402891!2d3.3031455097021483!3d6.644137904680349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sBlock%2020%2F21%2C%20Liberty%20Plaza%2C%20%20%20%20%20%20%20%20%20%20Opposite%20Popoola%20Bus%20Stop%2C%20Ekoro-Abule%20Egba%20Road.%20%20%20%20%20%20%20%20%20Lagos-%20Nigeria.!5e0!3m2!1sen!2sng!4v1732204537655!5m2!1sen!2sng" target="_blank"><i class="fa-solid fa-location-dot fa-2x"></i></a>
-                        <div class="sub-address">
-                            <a href="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d63408.35866402891!2d3.3031455097021483!3d6.644137904680349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sBlock%2020%2F21%2C%20Liberty%20Plaza%2C%20%20%20%20%20%20%20%20%20%20Opposite%20Popoola%20Bus%20Stop%2C%20Ekoro-Abule%20Egba%20Road.%20%20%20%20%20%20%20%20%20Lagos-%20Nigeria.!5e0!3m2!1sen!2sng!4v1732204537655!5m2!1sen!2sng" target="_blank">
-                            <h1>Address</h1>
-                            <p>
-                                Block 20/21, Lorem Ipsum, 
-                                lorem ipsum, road ipsum aquiestiv fubjf.
-                                Lagos- Nigeria.
-                            </p>
-                            </a>
-                        </div>          
-                        </div>
-                    
-                    </div>
-
-                <!-- **************************************************************** -->
-                <div class="yes-msg">
-                  
-                    <div class="contact-form">
-                      <div class="cont-form">
-                  
-                        <form target="_blank" action="https://formsubmit.co/xyz@gmail.com" method="POST">
-                            <h1>Send <span>Message</span></h1>
-                          <input type="text" name="name" placeholder="Your Name (*)" required>
-                          <input type="text" name="email" placeholder="Your Email (*)" required>
-                          <input type="text" name="subject" placeholder="Subject (*)" required>
-                          
-                          <textarea name="message" placeholder="Your Message"></textarea>
-                          <!-- submit button  -->
-                          <input type="submit" class="submit" name="send-message" value="Send Message">
-                        </form>
-                  
-                      </div>
-                      <!-- ******************************* -->
-                      <div class="maps">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d63408.35866402891!2d3.3031455097021483!3d6.644137904680349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sBlock%2020%2F21%2C%20Liberty%20Plaza%2C%20%20%20%20%20%20%20%20%20%20Opposite%20Popoola%20Bus%20Stop%2C%20Ekoro-Abule%20Egba%20Road.%20%20%20%20%20%20%20%20%20Lagos-%20Nigeria.!5e0!3m2!1sen!2sng!4v1732204537655!5m2!1sen!2sng" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                      </div>
-                    </div>
-                    
-                </div>
-
-                
-
-          </div>
-        </section>
-        <!-- *********************************************************************************** -->
             
+                            <div class="home-content">
+                            
+                                <div class="home-info">
+                                    <h3 class="hello">I am </h3>
+                                    <h1 class="name">Temitope Okupe</h1> <br>
+                                    <h3 class="my-profession"> HR Professional</h3>
+                                    <!-- ***************************** -->
+                                    <p>
+                                        A detail-oriented human resources practitioner with 10+ years in 
+                                        private sector and non-profit organizations. 
+                                        Guinness Made of Black Hero, <br>
+                                        An adaptable and transformational leader, analytical thinker with in-depth understanding of HR practices, 
+                                        WSIB, and staff development.                                   
+                                    </p>
+                                    <!-- ********************************** -->        
+                                    <div class="social-handle">
+                                        <i class="fa-brands fa-linkedin fa-2x"></i>
+                                        <i class="fa-brands fa-whatsapp fa-2x"></i>
+                                        <i class="fa-brands fa-square-facebook fa-2x"></i>      
+                                    </div>
+                                    <!-- ************************************** -->
+        
+                                    <a href="about" class="btn hire-me">More About Me</a>                                                           
+                                </div>
+        
+                                    <!-- image on the right div  -->
+                                    <div class="home-img">
+                                        <img src="./pexels-elsimage-2216607-removebg-preview.png" alt="">
+                                    </div>
+        
+                            </div>
 
+                        </div>
+                <!-- &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& -->
+                 <!-- ABOUT SECTION  -->
+
+
+                        <div class="content" id="about">
+                                <div class="about-content">
+            
+                                    <div class="me">
+                                        <h1 class="about_heading">About <span>Me</span></h1>
+                            
+                            
+                                        <p>
+                                            Ayo Oke is a computer scientist with substantial expertise in computing and mathematics.<br>
+                                            A professional full-stack engineer with experience in both frontend and backend development,
+                                            as well as programming languages such as Python, JavaScript, Django, and React.<br>
+                                            My diverse skills extend to software project management, where my primary strengths are
+                                            negotiating ambiguity and proactively tackling obstacles. <br><br>
+                                            I excel in painstakingly analyzing project scopes, finding bottlenecks, and
+                                            effectively allocating resources, with a strong emphasis on risk management and resource optimization.
+                                            This skill guarantees that projects are completed perfectly well on schedule and within budget.<br>
+                                            I have an amazing track record of successfully completing several projects.
+                                            My profile includes a creative element in addition to my technical and project management talents.
+                                            <br><br>
+                                            I am a well-rounded professional with a solid foundation in computer science education, mathematics,
+                                            coding prowess, efficient project management abilities, creative endeavors in paint production,
+                                            and a passion for music production and instruction. <br><br>
+                                            Also, my hands-on approach to artistic endeavors is demonstrated by my experience in decorative paint
+                                            production.
+                                            A music instructor with an understanding of Jazz music with flexibility on musical instruments
+                                            such as the piano, bass guitar, lead guitar, and drums.<br>
+                                            My simple yet powerful profile demonstrates my passion and achievements in a variety of fields.
+                                            <br>
+                                            I am a well-rounded professional with a solid foundation in computer science education, mathematics,
+                                            coding prowess, efficient project management abilities, creative endeavors in paint production,
+                                            and a passion for music production and instruction. <br><br>
+                                            Also, my hands-on approach to artistic endeavors is demonstrated by my experience in decorative paint
+                                            production.
+                                            A music instructor with an understanding of Jazz music with flexibility on musical instruments
+                                            such as the piano, bass guitar, lead guitar, and drums.<br>
+                                            My simple yet powerful profile demonstrates my passion and achievements in a variety of fields.
+                                            
+                                        </p>
+                                        <!-- ********************** -->
+                                        <div class="pic">
+                                            <img class="tope-img" src="./homeimgs/FB_IMG_1739703691354.jpg" alt="my picture">
+                                        </div>
+                                        <!-- ****************************88 -->
+                                      </div>
+                                </div>
+
+                        </div>
+                <!-- &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& -->
+                <!-- PROTFOLIO  -->
+       
+       
+                <div class="content" id="projects">
+
+                    <div class="project-content">
+
+                        <div class="me">
+
+                            <h1 class="about_heading">Projects <span>Done</span></h1>
+                            
+                            <div class="our-work">                    
+                                <!-- 1 -->
+                                <div class="parent">
+                                  <img src="./projectimgs/car.jpg" alt="">
+                                  <div class="child">
+                                    <h3>Lorem Ipsum Porfoklio</h3>
+                                    <p>
+                                      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                      Iure enim officiis quaerat eligendi officia dolore ipsam impedit. 
+                                      Consequatur, repellendus, atque accusamus porro nobis, tenetur autem ullam hic dolorum placeat saepe!
+                                    </p>
+                                  </div>
+                                </div>
+                                <!-- 2 -->
+                                <div class="parent">
+                                  <img src="./projectimgs/cupjottter.jpg" alt="">
+                                  <div class="child">
+                                    <h3>Lorem Ipsum Porfoklio</h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        Iure enim officiis quaerat eligendi officia dolore ipsam impedit. 
+                                        Consequatur, repellendus, atque accusamus porro nobis, tenetur autem ullam hic dolorum placeat saepe!
+                                    </p> 
+                                  </div>
+                                </div>
+                                <!-- 3 -->
+                                <div class="parent">
+                                  <img src="./projectimgs/rollamala.jpeg" alt="">
+                                  <div class="child">
+                                    <h3>Lorem Ipsum Porfoklio</h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        Iure enim officiis quaerat eligendi officia dolore ipsam impedit. 
+                                        Consequatur, repellendus, atque accusamus porro nobis, tenetur autem ullam hic dolorum placeat saepe!
+                                    </p>
+                                  </div>
+                                </div>
+                                <!-- 4 -->
+                                <div class="parent">
+                                  <img src="./projectimgs/tablepentape.jpg" alt="">
+                                  <div class="child">
+                                    <h3>Lorem Ipsum Porfoklio</h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        Iure enim officiis quaerat eligendi officia dolore ipsam impedit. 
+                                        Consequatur, repellendus, atque accusamus porro nobis, tenetur autem ullam hic dolorum placeat saepe!
+                                    </p>
+                                  </div>
+                                </div>
+                                <!-- 5 -->
+                                <div class="parent">
+                                  <img src="./projectimgs/cupjottter.jpg" alt="">
+                                  <div class="child">
+                                    <h3>Lorem Ipsum Porfoklio</h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        Iure enim officiis quaerat eligendi officia dolore ipsam impedit. 
+                                        Consequatur, repellendus, atque accusamus porro nobis, tenetur autem ullam hic dolorum placeat saepe!
+                                    </p>
+                                  </div>
+                                </div>
+                                <!-- 6 -->
+                                <div class="parent">
+                                  <img src="./projectimgs/car.jpg" alt="">
+                                  <div class="child">
+                                    <h3>Lorem Ipsum Porfoklio</h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        Iure enim officiis quaerat eligendi officia dolore ipsam impedit. 
+                                        Consequatur, repellendus, atque accusamus porro nobis, tenetur autem ullam hic dolorum placeat saepe!
+                                    </p>
+                                  </div>
+                                </div>
+                                <!-- 7 -->
+                                <div class="parent">
+                                  <img src="./projectimgs/tablepentape.jpg" alt="">
+                                  <div class="child">
+                                    <h3>Lorem Ipsum Porfoklio</h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        Iure enim officiis quaerat eligendi officia dolore ipsam impedit. 
+                                        Consequatur, repellendus, atque accusamus porro nobis, tenetur autem ullam hic dolorum placeat saepe!
+                                    </p>
+                                  </div>
+                                </div>
+                                <!-- 8 -->
+                                <div class="parent">
+                                  <img src="./projectimgs/tablepentape.jpg" alt="">
+                                  <div class="child">
+                                    <h3>Lorem Ipsum Porfoklio</h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        Iure enim officiis quaerat eligendi officia dolore ipsam impedit. 
+                                        Consequatur, repellendus, atque accusamus porro nobis, tenetur autem ullam hic dolorum placeat saepe!
+                                    </p>
+                                  </div>
+                                </div>
+            
+                            </div>
+                      </div>
+
+                    </div>
+
+                </div>
+                <!-- &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& -->
+                <!-- CONTACT  -->
+                <div class="content" id="contact">
+                    
+                    <div class="contact-content">
+
+                        <div class="me">
+
+                            <h1 class="about_heading">Contact <span>Me</span></h1>
+                
+                                <!-- **************************************************************************** -->
+                                    <div class="contact-icons">
+                
+                                        <!-- Phone  -->
+                                        <div class="sub-phone">
+                                            <a href="tel:+234">
+                                              <i class="fa-solid fa-phone fa-2x"> </i><p><span>Phone: </span>+234-123-5684-235</p>                                             
+                                            </a>
+                                        </div>
+                                        <!-- *********** -->
+                
+                
+                                        <!-- Email  -->
+                                              <div class="sub-email">
+                                                  <a href="mailto:topsie@gmail.com" target="_blank">
+                                                   <i class="fa-solid fa-envelope fa-2x"></i>  <p><span>Email: </span>toppsie@gmail.com</p>
+                                                  </a>                                           
+                                              </div>                                               
+                                        <!-- ****** -->
+                
+                                        <!-- Whatsapp  -->
+                                        <div class="sub-whatsapp">
+                                            <a href="https://wa.me/+234" target="_blank">
+                                              <i class="fa-brands fa-whatsapp fa-2x"></i>
+                                              <p><span>Whatsapp: </span>+234-123-5684-235</p>                                    
+                                            </a>
+                                        </div> 
+                                        <!-- *************          -->
+                                                        
+                                        <!-- Address  -->
+                                        <div class="sub-address">
+                                            <a href="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d63408.35866402891!2d3.3031455097021483!3d6.644137904680349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sBlock%2020%2F21%2C%20Liberty%20Plaza%2C%20%20%20%20%20%20%20%20%20%20Opposite%20Popoola%20Bus%20Stop%2C%20Ekoro-Abule%20Egba%20Road.%20%20%20%20%20%20%20%20%20Lagos-%20Nigeria.!5e0!3m2!1sen!2sng!4v1732204537655!5m2!1sen!2sng" target="_blank">
+                                              <i class="fa-solid fa-location-dot fa-2x"></i>
+                                              <p>
+                                                <span>Address:</span>
+                                                  Block 20/21, Lorem Ipsum, 
+                                                  lorem ipsum, road ipsum <br> aquiestiv fubjf.
+                                                  Lagos- Nigeria.
+                                              </p>                                            
+                                            </a>
+                                        </div>
+                                        <!-- ************ -->
+                                    
+                                    </div>
+                
+                                <!-- **************************************************************** -->
+                                <div class="yes-msg">
+                                  
+                                    <div class="contact-form">
+                                      <div class="cont-form">
+                                  
+                                        <form target="_blank" action="https://formsubmit.co/xyz@gmail.com" method="POST">
+                                            <h1>Send <span>Message</span></h1>
+                                          <input type="text" name="name" placeholder="Your Name (*)" required>
+                                          <input type="text" name="email" placeholder="Your Email (*)" required>
+                                          <input type="text" name="subject" placeholder="Subject (*)" required>
+                                          
+                                          <textarea name="message" placeholder="Your Message"></textarea>
+                                          <!-- submit button  -->
+                                          <input type="submit" class="submit" name="send-message" value="Send Message">
+                                        </form>
+                                  
+                                      </div>
+                                      <!-- ******************************* -->
+                                      <div class="maps">
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d63408.35866402891!2d3.3031455097021483!3d6.644137904680349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sBlock%2020%2F21%2C%20Liberty%20Plaza%2C%20%20%20%20%20%20%20%20%20%20Opposite%20Popoola%20Bus%20Stop%2C%20Ekoro-Abule%20Egba%20Road.%20%20%20%20%20%20%20%20%20Lagos-%20Nigeria.!5e0!3m2!1sen!2sng!4v1732204537655!5m2!1sen!2sng" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                      </div>
+                                    </div>
+                                    
+                                </div>
+                
+                                
+                
+                          </div>
+
+                    </div>
+
+                </div>
     </div>
-</div>
 
-<script>
-    const navLinks = document.querySelectorAll('.nav-bar a');
-    const contents = document.querySelectorAll('.content');
-    // *******************
-    const navBar = document.querySelector('.nav-bar');
-    const navToggler = document.querySelector('.nav-toggler');
-    const contentWrapper = document.querySelector('.content-wrapper');
-    // *************************
-
-
-    navLinks.forEach(link => {
-        link.addEventListener('click', (event) => {
-            event.preventDefault(); // Prevent default link behavior
-
-            const target = document.getElementById(link.dataset.target);
-
-            // Hide all content sections
-            contents.forEach(content => content.classList.remove('active'));
-
-            // Show the target content section
-            target.classList.add('active');
-
-             // Reset scroll position when showing new content
-            target.scrollTop = 0;
-        });
-    });
-    // ****************************
-    navToggler.addEventListener('click', () => {
-    navBar.classList.toggle('active'); // Toggle navbar visibility
-    contentWrapper.classList.toggle('nav-open'); // Toggle content margin
-});
-
-    // *********************************************************************
-    // const navTogglerBtn = document.querySelector(".nav-toggler")
-    //       navBar = document.querySelector(".nav-bar")
-    //       navTogglerBtn.addEventListener("click", () =>
-    //       {
-    //         navbarSectionTogglerBtn();
-    //       })
-    //       function navbarSectionTogglerBtn()
-    //       {
-    //         navBar.classList.toggle("open");
-    //         navTogglerBtn.classList.toggle("open");
-    //         for(let i=0; i<totlSection; i++)
-    //       {
-    //         allSection[i].classList.toggle("open");
-    //       }
-    //       }
-
-
-
-
-</script>
-
+    <script src="script.js"></script>
 </body>
 </html>
