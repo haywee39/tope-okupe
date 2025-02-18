@@ -10,7 +10,7 @@
 
     .toggle-btn {
         display: inline-block;
-        position: fixed;
+        /* position: fixed; */
     }
 
     .sidenav.open {
@@ -19,6 +19,7 @@
 
     .main.shifted {
         margin-left: 270px;
+        border: 0;
     }
 
     /* **************************** */
@@ -112,9 +113,7 @@
     height:300px;  
   }
   .child p{
-    /* width: 350px; */
-    /* height: 150px; */
-    background-color: red;
+    /* background-color: red; */
   }
 
    /* *************************************************************** */
