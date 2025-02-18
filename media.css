@@ -10,6 +10,7 @@
 
     .toggle-btn {
         display: inline-block;
+        position: fixed;
     }
 
     .sidenav.open {
@@ -20,12 +21,10 @@
         margin-left: 270px;
     }
 
-
-
     /* **************************** */
     #home{
         height: auto;
-        width: 100vw;/**/
+        width: 100vw;
         padding: 20px;
         /* background-color: red; */
        }
@@ -43,10 +42,9 @@
        }
     
        h1.name{
-        /* font-size: 35px; */
         width: 100%;
-        /* background-color: red; */
         text-align: center;
+        /* background-color: red; */
        }
     
        .social-handle{
@@ -54,44 +52,41 @@
        }
     
        .home-img{
-        display: none; /**/
+        display: none;
        }
-    
-      
-    
+
        #background-video{
         width: 100%;
         height: 100%;
         object-fit: cover;
        }
        /* **************************************************************** */
-/* about */
-   #About{
-    display: grid;
-    height:auto;
-    width: 100vw;
-  
-}
+        /* about */
+        #About{
+            display: grid;
+            height:auto;
+            width: 100vw;
+        
+        }
 
-.me{
-    width: 100%;
-    justify-content: center;
-}
+        .me{
+            width: 100%;
+            justify-content: center;
+        }
 
-.me p{
-    /* font-size: 12px; */
-    word-spacing: 3px;
-    letter-spacing: 1px;
-}
+        .me p{
+            word-spacing: 3px;
+            letter-spacing: 1px;
+        }
 
-.pic{
-    width: 100px;
-    height: 100px;
-    border-radius: 100px;
-    margin-right: 10px;
-    margin-bottom: 50px;
-   
-}
+        .pic{
+            width: 100px;
+            height: 100px;
+            border-radius: 100px;
+            margin-right: 10px;
+            margin-bottom: 50px;
+        
+        }
 
  /* ********************************************************* */
      /* PROJECTS DONE  */
