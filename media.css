@@ -44,7 +44,7 @@
         /* background-color: red; */
        }
        .home-content{
-        background: grey;
+        /* background: grey; */
         width: 100%;
         height: auto;
         padding: 10px;
@@ -128,11 +128,84 @@
     width:400px;
     height:300px;  
   }
-  .child p{
-    /* background-color: red; */
-  }
-
+  
    /* *************************************************************** */
+   /* CONTACS DONE  */
+   .contact-content{
+    height: auto;
+   }
+
+   .me{
+    width: 100vw;
+    height: auto;
+    /* background-color: yellow; */
+   }
+   .contact-icons{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: auto;
+    /* background-color: blue; */
+
+   }
+
+   .contact-icons i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 0;
+    height: 0;
+    /* border-radius: 5px; */
+    /* background-color: orange; */
+    color: orange;
+    }
+    .contact-icons i:hover{
+        color: white;
+    }
+
+    p span{
+        display: none;
+    }
+   .sub-phone a, .sub-email a, .sub-whatsapp a, .sub-address a{
+    width: 55vw;
+    /* align-items: center; */
+    padding: 20px;
+   }
+   .contact-form{
+    /* padding-left: 65px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 60vw;
+    /* background-color: yellow; */
+
+    }
+
+    .cont-form, .maps{
+        /* display: flex; */
+        /* justify-content: center; */
+        /* align-items: center; */
+        width: 60vw;
+        height: auto;
+        /* border-radius: 10px; */
+        /* color: white; */
+        /* margin: 0; */
+        /* padding: 0; */
+        padding-right: 30px;
+        
+    }
+    form input{
+        width: 350px;
+        height: 50px; 
+    }
+    textarea{
+        width: 350px;
+        height: 30vh;
+    }
+        
+    
 
 
     

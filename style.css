@@ -383,10 +383,13 @@ gap: 20px;
 /* CONTACT SECTION */
 .contact-content{
 display: flex;
+flex-direction: column;
 justify-content: center;
 align-items: center;
 width: 100%;
 height: auto; 
+overflow-x: hidden;
+/* background-color: aqua; */
 }
 
 .contact-icons{
@@ -404,8 +407,8 @@ justify-content: center;
 display: flex;
 justify-content: center;
 align-items: center;
-width: 60px;
-height: 75px;
+width: 50px;
+height: 65px;
 border-radius: 5px;
 background-color: orange;
 color: white;
@@ -427,7 +430,8 @@ color: white;
 .sub-phone a, .sub-email a, .sub-whatsapp a, .sub-address a{
 display: flex;
 align-items: center;
-width:auto;
+/* justify-content: center; */
+width: 50vw;
 height: 100px;
 gap: 25px;
 padding: 10px;
@@ -445,7 +449,6 @@ text-decoration: none;
 color: white;
 /* background-color: blue; */
 }
-
 
 .contact-icons p:hover{
 color: orange ;
@@ -480,6 +483,7 @@ width: 38vw;
 height: 70vh;
 border-radius: 10px;
 color: white;
+/* background-color: red; */
 
 }
 
