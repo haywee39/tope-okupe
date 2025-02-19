@@ -44,10 +44,10 @@
         /* background-color: red; */
        }
        .home-content{
-        /* background: grey; */
         width: 100%;
         height: auto;
         padding: 10px;
+        /* background: grey; */
        }
     
        .home-info{
@@ -79,29 +79,18 @@
        }
        /* **************************************************************** */
         /* about */
-        #About{
-            display: grid;
-            height:auto;
-            width: 100vw;
-        
-        }
-
-        .me{
-            width: 100%;
-            justify-content: center;
-        }
-
         .me p{
-            word-spacing: 3px;
-            letter-spacing: 1px;
-        }
+            width: 75vw;
+           
+          }
+
 
         .pic{
-            width: 100px;
-            height: 100px;
-            border-radius: 100px;
-            margin-right: 10px;
-            margin-bottom: 50px;
+            width: 150px;
+            height: 150px;
+            border-radius: 125px;
+            /* margin-right: 10px; */
+            /* margin-bottom: 30px; */
         
         }
 
@@ -155,8 +144,6 @@
     align-items: center;
     width: 0;
     height: 0;
-    /* border-radius: 5px; */
-    /* background-color: orange; */
     color: orange;
     }
     .contact-icons i:hover{
@@ -168,45 +155,54 @@
     }
    .sub-phone a, .sub-email a, .sub-whatsapp a, .sub-address a{
     width: 55vw;
-    /* align-items: center; */
     padding: 20px;
    }
+   /* ******************************************************* */
+   .yes-msg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    /* background-color: blue; */
+   }
    .contact-form{
-    /* padding-left: 65px; */
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     height: auto;
-    width: 60vw;
+    padding: 0;
+    width: 95%;
     /* background-color: yellow; */
+   }
+   .cont-form, .maps{
+    width: 90%;
+    height: auto;
+    margin-bottom: 40px;
+     /* background-color: red; */
+   }
+   form input{
+    padding-left: 0px;
+    width: 80vw;
+    height: 50px;
+   }
+   textarea{
+    padding-left: 0px;
+    width: 80vw;
+    height: 250px;
 
-    }
+   }
+   .submit{
+    width: 40vw;
+    height: 50px;
+   }
 
-    .cont-form, .maps{
-        /* display: flex; */
-        /* justify-content: center; */
-        /* align-items: center; */
-        width: 60vw;
-        height: auto;
-        /* border-radius: 10px; */
-        /* color: white; */
-        /* margin: 0; */
-        /* padding: 0; */
-        padding-right: 30px;
-        
-    }
-    form input{
-        width: 350px;
-        height: 50px; 
-    }
-    textarea{
-        width: 350px;
-        height: 30vh;
-    }
-        
-    
-
+   .maps iframe {
+    width: 95%; 
+    height: 45vh; 
+    border: 0;
+}
 
     
 }

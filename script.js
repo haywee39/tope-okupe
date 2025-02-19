@@ -13,3 +13,4 @@ function showContent(sectionId) {
     const activeContent = document.getElementById(sectionId);
     activeContent.style.display = 'block';
 }
+

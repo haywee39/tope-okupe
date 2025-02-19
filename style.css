@@ -96,9 +96,7 @@ body{
 }
 
 .content {
-  /* display: none; */
-  justify-content: center;
-  align-items: center;
+  display: none;
   animation: slideIn 0.5s forwards;
 }
 
@@ -115,7 +113,6 @@ body{
 
 /* Toggle button */
 .toggle-btn {
-  /* position: absolute; */
   font-size: 20px;
   padding: 10px;
   border: 3px solid white;
@@ -241,34 +238,42 @@ h1.name{
   align-items: center;
   width: 100%;
   height: auto; 
-  /* background-color: purple; */
-}
+  overflow: hidden;
+  /* background-color: red; */
+  }
 
 .about_heading span{
   color: white;
 }
-
-.me{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 50px;
-  padding: 20px;
-  width: 80%;
-  height: auto;
-  /* background: yellow; */
-}
-
 .about_heading {
   margin-bottom: 20px;
   color: orange; 
 }
 
+.me{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: auto;
+  padding: 40px;
+  /* background-color: blue; */
+}
+
+.me p{
+  display: flex;
+  width: 55vw;
+  height: auto;
+  padding: 20px;
+  /* background-color: blueviolet; */
+}
+
+
 .pic{
-  width: 200px;
-  height: 200px;
-  border-radius: 100px;
+  width: 250px;
+  height: 250px;
+  border-radius: 200px;
   margin-top: 55px;
   background: orange ;
   animation: drake 8s infinite alternate;
@@ -300,7 +305,7 @@ h1.name{
 .tope-img{
   width: 100%;
   height: 100%;
-  border-radius: 100px;
+  border-radius: 130px;
 }
 
 /* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
@@ -430,7 +435,6 @@ color: white;
 .sub-phone a, .sub-email a, .sub-whatsapp a, .sub-address a{
 display: flex;
 align-items: center;
-/* justify-content: center; */
 width: 50vw;
 height: 100px;
 gap: 25px;
