@@ -44,22 +44,27 @@
         /* background-color: red; */
        }
        .home-content{
-        width: 100%;
+        width:100%;
         height: auto;
         padding: 10px;
         /* background: grey; */
        }
     
        .home-info{
+        /* width: 100%; */
         background-color: transparent;
+        /* margin: 0; */
        }
-    
+       .home-info p{
+        width: 90%;
+        /* background-color: yellow; */
+       }
        .hello, .my-profession{
-        font-size: 24px;
+        font-size: 25px;
        }
     
        h1.name{
-        width: 100%;
+        width: 95%;
         text-align: center;
         /* background-color: red; */
        }
