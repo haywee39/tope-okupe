@@ -98,6 +98,7 @@ body{
 .content {
   display: none;
   animation: slideIn 0.5s forwards;
+  height: 100vh;
 }
 
 @keyframes slideIn {
@@ -110,6 +111,41 @@ body{
       opacity: 1;
   }
 }
+/* ************************* */
+.content.active{
+  display: block;
+  animation: slideIn 0.5s forwards;
+}
+#intro.active{
+  animation: grow 2s forwards;
+}
+@keyframes grow{
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.centered{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  color: white;
+}
+.centered h2{
+  color: orange;
+}
+.centered h2 span{
+  color: white;
+}
+
+/* ***************************** */
 
 /* Toggle button */
 .toggle-btn {

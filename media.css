@@ -86,8 +86,10 @@
         /* about */
         .me p{
             width: 75vw;
-           
-          }
+        }
+        .me p span{
+            color: orange !important;
+        }
 
 
         .pic{
