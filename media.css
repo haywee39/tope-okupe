@@ -87,7 +87,7 @@
         .me p{
             width: 75vw;
         }
-        .me p span{
+        #about .me p span{
             color: orange !important;
         }
 
